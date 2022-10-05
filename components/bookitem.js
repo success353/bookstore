@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const BookItem = ({ title, imgUrl, description, id }) => {
+const BookItem = ({ title, imgUrl, description }) => {
     return (
         <li>
             <Image src={imgUrl} alt={title} width={300} height={400} />

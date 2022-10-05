@@ -15,8 +15,8 @@ const BookList = () => {
         <div>
             <ul>
                 {books &&
-                    books.map(({ title, description, imgUrl, id }) => (
-                        <BookItem title={title} imgUrl={imgUrl} description={description} key={id} />
+                    books.map(({ title, description, imgUrl}, index) => (
+                        <BookItem title={title} imgUrl={imgUrl} description={description} key={index} />
                 ))}
             </ul>
         </div>
