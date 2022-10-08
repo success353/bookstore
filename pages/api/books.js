@@ -3,7 +3,7 @@ import mongodb, { MongoClient } from 'mongodb'
 
 const handler = async (req, res) => {
   const client = await MongoClient.connect(
-    process.env.MONGO_CLIENT
+    'mongodb+srv://admin:FDhrhY7waLr4sR7@cluster0.itladkj.mongodb.net/?retryWrites=true&w=majority'
   )
 
   //create the database
